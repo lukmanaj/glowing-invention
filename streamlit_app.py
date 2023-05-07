@@ -49,7 +49,7 @@ def run_aligner():
                     "--cuda"
                 ]
                 try:
-                    result = subprocess.run(command, capture_output=True, cwd="/app/cohere-project-test", text=True)
+                    result = subprocess.run(command, capture_output=True, cwd="/app/glowing-invention", text=True)
                 except Exception as e:
                     st.error(f"Error running the aligner command: {e}")
                     return
